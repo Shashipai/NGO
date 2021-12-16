@@ -2,11 +2,12 @@ body {
   background-color: #344a72;
   background-image: url("img/Hunger.png");
   font-family: "Roboto", sans-serif;
+  overflow: hidden;
 }
 
 .signup-box {
   width: 360px;
-  height: 620px;
+  height: 540px;
   margin: auto;
   background-color: white;
   border-radius: 3px;
@@ -51,7 +52,7 @@ form input {
   border-radius: 6px;
   outline: none;
 }
-input[type="button"] {
+input[type=submit]{
   width: 320px;
   height: 35px;
   margin-top: 20px;
@@ -62,12 +63,12 @@ input[type="button"] {
 }
 p {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 10px;
   font-size: 15px;
 }
 .para-2 {
   width: 360px;
-  height: 25px;
+  height: 27px;
   background-color: black;
   margin: auto;
   text-align: center;
