@@ -45,13 +45,15 @@ body {
 
 #btn-stt  {
 	position: fixed;
-	right: 10px;
-	bottom: 10px;
+	
+	right: 20px;
+	bottom: 20px;
 	border-radius: 50%;
 	border: none;
 	cursor: pointer;
 	z-index: 100;
 }
+
 
 .ic:hover {
 	color: #660033;
@@ -63,6 +65,15 @@ body {
 		height: 60vh;
 	}
 	
+}
+
+.card{  
+	opacity:0;
+  animation: animations 3s ease-in-out  forwards ;
+}
+
+.article{
+ animation: animations 3s ease-in-out 1s;
 }
 
 .navbar{
@@ -121,10 +132,35 @@ body {
 	   opacity:1;
 	}
 }
-
-
-@media all and (max-width:600px){
-	.swiper-button-prev::after,.swiper-button-next::after{
-		display:none;
-	}
+.email-boxnews{
+  height: 40px;
+  justify-content: center;
+  display: flex; /*its better to use inline-flex*/
+}
+.email-boxnews i{
+  background: #2f3542;
+  width: 40px;
+  line-height: 40px;
+  background-size: cover;
+  padding-left:10px;
+  border-radius: 4px;
+}
+.tboxnews,.btnnews{
+  border: none;
+  outline: none;
+}
+.tboxnews{
+  width: 0px;
+  transition: 0.6s;
+}
+.email-boxnews:hover > .tboxnews,.tboxnews:focus{
+  width: 260px;
+  padding: 0 10px;
+}
+.btnnews{
+  background: #2f3542;
+  color: white;
+  padding: 0 10px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
