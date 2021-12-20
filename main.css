@@ -67,10 +67,7 @@ body {
 	
 }
 
-.card{  
-	opacity:0;
-  animation: animations 3s ease-in-out  forwards ;
-}
+
 
 .article{
  animation: animations 3s ease-in-out 1s;
@@ -163,4 +160,10 @@ body {
   padding: 0 10px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+@media all and (max-width:600px){
+	.swiper-button-prev::after,.swiper-button-next::after{
+		display:none;
+	}
 }
